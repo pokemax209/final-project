@@ -86,3 +86,10 @@ a:hover {
     max-width: 100%;
     height: auto;
 }
+
+#habitatmap {
+    display: block;
+    margin-left: auto;
+    max-width: 30%;
+    height: auto; 
+}
