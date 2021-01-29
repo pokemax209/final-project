@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <script type="text/javascript">
+        window.onload = function(){ 
+            document.getElementById("title").onmouseover = function() {document.getElementById("title").style.color = "#"+Math.floor(Math.random()*16777215).toString(16)};
+        };
+    </script>
 </head>
 <body>
     <div id="nav">
@@ -22,8 +27,9 @@
     <div id="wrapper">
         <p id="bigtitle" class="bold">Habitat</p>
         <div id="homecontent">
-            <p class="text">Black Rhinos live in Tropical and Subtropical Grasslands, Savannas, and Shrublands. 98% of the population is located in Eastern and Southern Africa.</p>
+            <p class="text">Black Rhinos live in Tropical and Subtropical Grasslands, Savannas, and Shrublands. 98% of the population is located in Eastern and Southern Africa. However, the mammal used to live throughout most of Africa before poaching became an issue.</p>
         </div>
+        <img id="savanah" src="images/savanah.jpg" alt="Savanah at sunset" width="50%" height="50%">
         <img id="habitatmap" src="images/habitat_map.png" alt="Map of Black Rhino habitat">
     </div>
 </body>

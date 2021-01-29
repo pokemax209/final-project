@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <script type="text/javascript">
+        window.onload = function(){ 
+            document.getElementById("title").onmouseover = function() {document.getElementById("title").style.color = "#"+Math.floor(Math.random()*16777215).toString(16)};
+        };
+    </script>
 </head>
 <body>
     <div id="nav">
@@ -20,7 +25,15 @@
     </div>
 
     <div id="wrapper">
-        
+        <p id="bigtitle" class="bold">Photo Gallery</p>
+        <div id="picture-frame">
+            <img src="images/rhino1.jpg" class="gallery-crop">
+            <img src="images/rhino2.jpg" class="gallery-crop">
+            <img src="images/rhino3.jpg" class="gallery-crop">
+            <img src="images/rhino4.jpg" class="gallery-crop">
+            <img src="images/rhino5.jpg" class="gallery-crop">
+            <img src="images/rhino6.jpg" class="gallery-crop">
+        </div>
     </div>
 </body>
 </html>

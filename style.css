@@ -34,6 +34,11 @@ a:hover {
     top: 0px;
     left: 0px;
     width: 20%;
+    transition: transform .5s;
+}
+
+#rhinointro:hover {
+    transform: rotateY(360deg);
 }
 
 .navbutton {
@@ -98,5 +103,36 @@ a:hover {
 }
 
 #habitatmap:hover {
-    transform: scale(2.5) translate(-30%,-30%);
+    transform: scale(2) translate(-30%,-30%);
+}
+
+#savanah {
+    display: block;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-style: dashed;
+    border-width: 10%;
+    float: left;
+}
+
+#picture-frame {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.gallery-crop {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin: 0.2%;
+    border-width: 1%;
+    border-color: #aaa;
+    border-style: solid;
+    border-radius: 15%;
+    transition: transform .5s;
+}
+
+.gallery-crop:hover {
+    transform: scale(1.25);
 }
