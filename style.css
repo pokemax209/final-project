@@ -118,12 +118,12 @@ a:hover {
 
 #picture-frame {
     margin-top: 3%;
-    margin-left: 3%;
+    margin-left: 5%;
 }
 
 .gallery-crop {
-    width: 500px;
-    height: 500px;
+    width: 30%;
+    height: 30%;
     object-fit: cover;
     margin: 0.2%;
     border-width: 1%;
