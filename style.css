@@ -13,9 +13,9 @@ a:hover {
 }
 
 #nav {
-    border-style: solid;
+    /*border-style: solid;
     border-color: #000;
-    border-width: 10px;
+    border-width: 10px;*/
     width: 70%;
     height: auto;
     margin: auto;
@@ -85,11 +85,18 @@ a:hover {
     margin-right: auto;
     max-width: 100%;
     height: auto;
+    border-style: dashed;
+    border-width: 10%;
 }
 
 #habitatmap {
     display: block;
     margin-left: auto;
     max-width: 30%;
-    height: auto; 
+    height: auto;
+    transition: transform .5s;
+}
+
+#habitatmap:hover {
+    transform: scale(2.5) translate(-30%,-30%);
 }
