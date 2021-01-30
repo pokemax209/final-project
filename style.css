@@ -136,3 +136,18 @@ a:hover {
 .gallery-crop:hover {
     transform: scale(1.25);
 }
+
+#subbutton {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-top: 2%;
+}
+
+textarea {
+    resize: none;
+}
+
+.formtext {
+    margin-bottom: 0px;
+}

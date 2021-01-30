@@ -8,6 +8,20 @@
     <script type="text/javascript">
         window.onload = function(){ 
             document.getElementById("title").onmouseover = function() {document.getElementById("title").style.color = "#"+Math.floor(Math.random()*16777215).toString(16)};
+            document.getElementById("subbutton").onclick = function() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                if (email.includes("@") && email.includes(".")){
+                    document.getElementById("name").value = email;
+                    document.getElementById("email").value = name;
+                }
+                else {
+                    alert("please enter a real email");
+                }
+                if (name.includes("@")) {
+                    alert("please enter your name");
+                }
+            };
         };
     </script>
 </head>
@@ -25,7 +39,12 @@
     </div>
 
     <div id="wrapper">
-        
+        <p id="bigtitle" class="bold">Contact Us</p>
+        <p class="text formtext">Name:</p><br>
+        <textarea id="name"></textarea><br>
+        <p class="text formtext">Email:</p><br>
+        <textarea id="email"></textarea><br>
+        <button id="subbutton">Submit</button>
     </div>
 </body>
 </html>
